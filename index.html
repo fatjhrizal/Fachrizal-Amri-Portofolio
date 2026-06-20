@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fachrizal Amri | Electrical Engineering Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- SCROLL PROGRESS BAR -->
+    <div id="progress-bar"></div>
+
+    <!-- CUSTOM CURSOR -->
+    <div id="cursor-glow"></div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <div class="nav-logo">FA<span>.</span></div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#research">Research</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-status">
+            <span class="status-dot"></span>
+            <span class="status-text">Available</span>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <!-- Animated background grid -->
+        <div class="hero-grid-bg"></div>
+        <!-- Floating particles -->
+        <div class="particles" id="particles"></div>
+
+        <div class="hero-container">
+            <!-- LEFT: Text Content -->
+            <div class="hero-content">
+                <div class="hero-eyebrow">
+                    <span class="eyebrow-line"></span>
+                    <span>Engineering Portfolio</span>
+                </div>
+                <h1>I'm <span class="name-accent">Fachrizal</span><br>Amri</h1>
+                <h2 id="typing-target"></h2>
+                <p class="hero-desc">Automation · Control System · Energy Technology</p>
+                <p class="hero-text">
+                    A passionate engineer focused on designing and implementing innovative control systems and automation solutions for sustainable energy technologies.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary">Explore My Work</a>
+                    <a href="#contact" class="btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">3+</span>
+                        <span class="stat-label">Years Exp.</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">15+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">5+</span>
+                        <span class="stat-label">Certs</span>
+                    </div>
+                </div>
+                <div class="social">
+                    <a href="https://linkedin.com/in/fachrizal-amri" aria-label="LinkedIn">in</a>
+                    <a href="https://github.com/fachrizal" aria-label="GitHub">Git</a>
+                    <a href="mailto:fachrizalamri8@email.com" aria-label="Email">✉</a>
+                </div>
+            </div>
+
+            <!-- RIGHT: Orbit Visualization + Photo -->
+            <div class="hero-orbit-area">
+                <!-- Outer orbit ring -->
+                <div class="orbit-ring orbit-ring-outer"></div>
+                <!-- Middle orbit ring -->
+                <div class="orbit-ring orbit-ring-mid"></div>
+                <!-- Inner glow ring -->
+                <div class="orbit-ring orbit-ring-inner"></div>
+
+                <!-- Orbit nodes: outer ring -->
+                <div class="orbit-node node-plc" style="--angle:0deg; --radius:200px;">
+                    <div class="node-card">PLC</div>
+                    <div class="node-label">Automation</div>
+                </div>
+                <div class="orbit-node node-scada" style="--angle:60deg; --radius:200px;">
+                    <div class="node-card">SCADA</div>
+                    <div class="node-label">Monitoring</div>
+                </div>
+                <div class="orbit-node node-energy" style="--angle:120deg; --radius:200px;">
+                    <div class="node-card">⚡</div>
+                    <div class="node-label">Energy</div>
+                </div>
+                <div class="orbit-node node-iot" style="--angle:180deg; --radius:200px;">
+                    <div class="node-card">IoT</div>
+                    <div class="node-label">Systems</div>
+                </div>
+                <div class="orbit-node node-matlab" style="--angle:240deg; --radius:200px;">
+                    <div class="node-card">MATLAB</div>
+                    <div class="node-label">Simulation</div>
+                </div>
+                <div class="orbit-node node-hmi" style="--angle:300deg; --radius:200px;">
+                    <div class="node-card">HMI</div>
+                    <div class="node-label">Interface</div>
+                </div>
+
+                <!-- Orbit nodes: inner ring -->
+                <div class="orbit-node node-py" style="--angle:30deg; --radius:130px;">
+                    <div class="node-card node-small">Python</div>
+                </div>
+                <div class="orbit-node node-arduino" style="--angle:150deg; --radius:130px;">
+                    <div class="node-card node-small">Arduino</div>
+                </div>
+                <div class="orbit-node node-power" style="--angle:270deg; --radius:130px;">
+                    <div class="node-card node-small">Power</div>
+                </div>
+
+                <!-- Center: Photo + circuit overlay -->
+                <div class="orbit-center">
+                    <div class="center-glow"></div>
+                    <img src="Image/circuit.png" class="circuit-overlay" alt="">
+                    <img src="Image/foto ai.png" class="profile-photo" alt="Fachrizal Amri">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="section-header">
+            <span class="section-tag">01</span>
+            <h2>About Me</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>I am an Electrical Engineering student with strong interests in automation systems, embedded systems, control engineering, and renewable energy technologies.</p>
+                <p>My experience includes instrumentation systems, electrical system design, microcontroller-based monitoring, PLC programming, and industrial automation.</p>
+                <p>Beyond technical development, I have experience managing engineering teams and leading technical projects.</p>
+            </div>
+            <div class="about-highlights">
+                <div class="highlight-card">
+                    <span class="hi-icon">⚙</span>
+                    <span class="hi-text">Control Systems Design</span>
+                </div>
+                <div class="highlight-card">
+                    <span class="hi-icon">🔋</span>
+                    <span class="hi-text">Sustainable Energy</span>
+                </div>
+                <div class="highlight-card">
+                    <span class="hi-icon">📡</span>
+                    <span class="hi-text">IoT & Embedded Systems</span>
+                </div>
+                <div class="highlight-card">
+                    <span class="hi-icon">👥</span>
+                    <span class="hi-text">Engineering Leadership</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <div class="section-header">
+            <span class="section-tag">02</span>
+            <h2>Technical Expertise</h2>
+        </div>
+        <div class="skill-grid">
+            <div class="skill-card">
+                <div class="skill-icon">⚙</div>
+                <h3>Control System</h3>
+                <p>PLC Programming, Automation Design, Ladder Logic</p>
+                <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">💡</div>
+                <h3>Embedded System</h3>
+                <p>Arduino, ESP8266, Sensor Integration, IoT</p>
+                <div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">⚡</div>
+                <h3>Electrical Engineering</h3>
+                <p>Power System, Instrumentation, Circuit Design</p>
+                <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3>Engineering Software</h3>
+                <p>MATLAB, Proteus, Arduino IDE, Node-RED</p>
+                <div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <div class="section-header">
+            <span class="section-tag">03</span>
+            <h2>Selected Engineering Projects</h2>
+        </div>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-num">01</div>
+                <h3>Universal Testing Machine (UTM)</h3>
+                <p>Designed Arduino based material testing system integrating load cell sensor, motor control and cloud data acquisition.</p>
+                <div class="project-tags">
+                    <span>Arduino</span><span>Load Cell</span><span>IoT</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-num">02</div>
+                <h3>Energy Efficient Electric Vehicle</h3>
+                <p>Electrical system development for prototype vehicle competition including controller and energy optimization.</p>
+                <div class="project-tags">
+                    <span>EV</span><span>Control</span><span>Energy</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-num">03</div>
+                <h3>IoT Monitoring System</h3>
+                <p>Temperature and humidity monitoring system using microcontroller and IoT platform.</p>
+                <div class="project-tags">
+                    <span>ESP8266</span><span>MQTT</span><span>Dashboard</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+        <div class="section-header">
+            <span class="section-tag">04</span>
+            <h2>Experience</h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="tl-org">BRIN Samaun Samadikun Bandung</span>
+                    <h3>Engineering Intern</h3>
+                    <p>Research and development in instrumentation and control systems at national research institute.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="tl-org">KUKANG EV ITERA</span>
+                    <h3>General Manager</h3>
+                    <p>Led an engineering team developing energy-efficient electric vehicle prototype for national competition.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="tl-org">ITERA Mengajar</span>
+                    <h3>Volunteer</h3>
+                    <p>Educational outreach volunteer, contributing to community development programs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEARCH SECTION -->
+    <section id="research">
+        <div class="section-header">
+            <span class="section-tag">05</span>
+            <h2>Research Interest</h2>
+        </div>
+        <div class="research-grid">
+            <div class="research-item">
+                <span class="ri-icon">⚙</span>
+                <span>Automation and Industrial Control</span>
+            </div>
+            <div class="research-item">
+                <span class="ri-icon">🚗</span>
+                <span>Energy Efficient Vehicle</span>
+            </div>
+            <div class="research-item">
+                <span class="ri-icon">📡</span>
+                <span>Instrumentation System</span>
+            </div>
+            <div class="research-item">
+                <span class="ri-icon">🌱</span>
+                <span>Renewable Energy</span>
+            </div>
+            <div class="research-item">
+                <span class="ri-icon">💡</span>
+                <span>Embedded System and IoT</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="section-header">
+            <span class="section-tag">06</span>
+            <h2>Contact</h2>
+        </div>
+        <div class="contact-grid">
+            <a href="mailto:fachrizalamri8@email.com" class="contact-card">
+                <span class="contact-icon">✉</span>
+                <div>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-val">fachrizalamri8@email.com</span>
+                </div>
+            </a>
+            <a href="https://linkedin.com/in/fachrizal-amri" class="contact-card">
+                <span class="contact-icon">in</span>
+                <div>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-val">linkedin.com/in/fachrizal-amri</span>
+                </div>
+            </a>
+            <a href="https://github.com/fachrizal" class="contact-card">
+                <span class="contact-icon">⌥</span>
+                <div>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-val">github.com/fachrizal</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner">
+            <span class="footer-logo">FA<span>.</span></span>
+            <span>© 2026 Fachrizal Amri — Engineering Portfolio</span>
+            <span class="footer-status"><span class="status-dot"></span> Available for opportunities</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
