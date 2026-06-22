@@ -16,7 +16,7 @@ document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.clientX + 'px';
     cursor.style.top  = e.clientY + 'px';
 });
-document.querySelectorAll('a, button, .node-card, .project-card, .contact-card, .research-card, .about-single-card').forEach(el => {
+document.querySelectorAll('a, button, .node-card, .project-card, .contact-card, .research-card, .about-single-card, .about-polaroid').forEach(el => {
     el.addEventListener('mouseenter', () => {
         cursor.style.transform = 'translate(-50%, -50%) scale(2.2)';
         cursor.style.opacity = '0.18';
@@ -47,7 +47,7 @@ for (let i = 0; i < 28; i++) {
 // =====================
 // TYPING EFFECT
 // =====================
-const typingText = 'Electrical Engineering | Automation Engineer';
+const typingText = 'Electrical Engineering Student at Sumatera Institut of Technology';
 let typingIndex = 0;
 const typingEl = document.getElementById('typing-target');
 
@@ -312,3 +312,65 @@ function initAmbientSliders() {
 }
 
 window.addEventListener('DOMContentLoaded', initAmbientSliders);
+
+// =====================
+// ABOUT — INTERACTIVE PHOTO GALLERY LIGHTBOX
+// 4 polaroid snapshots (About1.jpg - About4.jpg) that open a
+// larger view with caption and prev/next navigation on click.
+// =====================
+function initAboutGallery() {
+    const gallery = document.getElementById('aboutGallery');
+    if (!gallery) return;
+
+    const polaroids = Array.from(gallery.querySelectorAll('.about-polaroid'));
+    const lightbox  = document.getElementById('aboutLightbox');
+    const lbImg     = document.getElementById('aboutLightboxImg');
+    const lbCap     = document.getElementById('aboutLightboxCap');
+    const btnClose  = document.getElementById('aboutLightboxClose');
+    const btnPrev   = document.getElementById('aboutLightboxPrev');
+    const btnNext   = document.getElementById('aboutLightboxNext');
+    if (!lightbox) return;
+
+    let currentIndex = 0;
+
+    function openLightbox(index) {
+        currentIndex = index;
+        const img = polaroids[index].querySelector('img');
+        const cap = polaroids[index].querySelector('.ap-cap').textContent;
+        lbImg.src = img.src;
+        lbImg.alt = img.alt;
+        lbCap.textContent = cap;
+        lightbox.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('is-open');
+        document.body.style.overflow = '';
+    }
+
+    function showRelative(delta) {
+        currentIndex = (currentIndex + delta + polaroids.length) % polaroids.length;
+        openLightbox(currentIndex);
+    }
+
+    polaroids.forEach((p, i) => {
+        p.addEventListener('click', () => openLightbox(i));
+    });
+
+    btnClose.addEventListener('click', closeLightbox);
+    btnPrev.addEventListener('click', () => showRelative(-1));
+    btnNext.addEventListener('click', () => showRelative(1));
+
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('is-open')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') showRelative(-1);
+        if (e.key === 'ArrowRight') showRelative(1);
+    });
+}
+window.addEventListener('DOMContentLoaded', initAboutGallery);
