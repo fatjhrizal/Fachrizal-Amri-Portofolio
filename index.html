@@ -50,7 +50,14 @@
                 <h1>Halo, I'm <span class="name-accent">Fachrizal</span><br>Amri</h1>
                 <h2 id="typing-target"></h2>
                 <p class="hero-desc">Power System · Automation & Control · IoT Development · Green Energy</p>
-                <p class="hero-text"><em>"I have no special talent. I am only passionately curious."</em><br><span class="hero-quote-cite">— Albert Einstein</span></p>
+
+                <!-- ===== REVISED QUOTE BLOCK ===== -->
+                <blockquote class="hero-quote-block">
+                    <p class="hero-quote-main">Engineering is not merely about creating solutions, but about continuously questioning, exploring, and transforming ideas into reality.</p>
+                    <cite class="hero-quote-cite">"I have no special talent. I am only passionately curious." — Albert Einstein</cite>
+                </blockquote>
+                <!-- ================================ -->
+
                 <div class="hero-cta">
                     <a href="#projects" class="btn-primary">Explore My Work</a>
                     <a href="#contact" class="btn-secondary">Get In Touch</a>
@@ -72,7 +79,7 @@
                     </div>
                 </div>
                 <div class="social">
-                    <a href="https://www.linkedin.com/in/fachrizal-amri-98b851241/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdY1Yjr1nRaaqXamoJMh2ng%3D%3D" target="_blank" aria-label="LinkedIn">in</a>
+                    <a href="https://www.linkedin.com/in/fachrizal-amri-98b851241/" target="_blank" aria-label="LinkedIn">in</a>
                     <a href="https://github.com/fatjhrizal" target="_blank" aria-label="GitHub">Git</a>
                     <a href="mailto:fachrizalamri8@email.com" aria-label="Email">✉</a>
                 </div>
@@ -128,42 +135,31 @@
         </div>
     </header>
 
-    <!-- ============================
-         ABOUT ME — SINGLE PROFESSIONAL TEXT BLOCK
-    ============================= -->
+    <!-- ABOUT ME -->
     <section id="about">
         <div class="section-header">
             <span class="section-tag">01</span>
             <h2>About Me</h2>
         </div>
-
         <div class="about-content-grid">
-
             <div class="about-single-card">
                 <span class="about-single-mark">"</span>
                 <div class="about-single-text">
                     <p>As an Electrical Engineering student at Institut Teknologi Sumatera (ITERA), I have a strong interest in Power Systems, Control &amp; Instrumentation, and Electronic Systems. I believe that technology should not merely function as intended, but should also provide efficient, reliable, and impactful solutions that create value for both industry and society.</p>
-
                     <p>Throughout my academic journey, I have actively developed my technical expertise through engineering projects, research activities, and competitions. I have experience leading an Energy-Efficient Electric Prototype Vehicle Team for the Indonesian Energy-Efficient Car Competition (KMHE) as General Manager. This role provided valuable experience in project management, strategic decision-making, cross-functional coordination, and problem-solving in demanding and fast-paced environments. In addition, I have been involved in the development of microcontroller-based systems, instrumentation systems, and Internet of Things (IoT) applications, allowing me to strengthen both my technical and analytical capabilities.</p>
-
                     <p>One of my key strengths is the ability to combine technical knowledge with leadership and communication skills. I am accustomed to working in multidisciplinary teams, adapting to new challenges, and transforming technical requirements into practical and effective engineering solutions. My active involvement in student organizations, event management, community service programs, and research activities has further enhanced my collaboration, time management, and professional skills.</p>
-
                     <p>I am highly motivated to continue expanding my expertise in Power Engineering, Industrial Automation, Control Systems, Instrumentation, Electronics, and Sustainable Energy Technologies. I am passionate about continuous learning and committed to contributing to innovative projects that drive technological advancement and operational excellence.</p>
-
                     <p>Currently, I am open to internship opportunities, research collaborations, and professional engagements that allow me to contribute meaningfully while further developing my skills and experience in the engineering field.</p>
-
                     <p class="about-single-quote">Driven by curiosity, guided by engineering principles, and committed to creating solutions that make a meaningful impact.</p>
                 </div>
             </div>
 
-            <!-- INTERACTIVE PHOTO GALLERY — pinned polaroid snapshots -->
             <div class="about-gallery" id="aboutGallery">
                 <div class="about-gallery-grid-bg"></div>
                 <div class="about-gallery-label">
                     <span class="ag-line"></span>
                     <span>Snapshots</span>
                 </div>
-
                 <div class="about-gallery-grid">
                     <button class="about-polaroid ap-1" data-index="0" aria-label="Open photo: Shell Eco-marathon, FTI Expo">
                         <span class="ap-pin"></span>
@@ -186,13 +182,10 @@
                         <span class="ap-cap">Electrical Engineering</span>
                     </button>
                 </div>
-
                 <span class="about-gallery-hint">Click a photo to view</span>
             </div>
-
         </div>
 
-        <!-- Lightbox for the About gallery -->
         <div class="about-lightbox" id="aboutLightbox">
             <button class="al-close" id="aboutLightboxClose" aria-label="Close">&times;</button>
             <figure class="al-figure">
@@ -206,7 +199,7 @@
         </div>
     </section>
 
-    <!-- SKILLS — INTERACTIVE TABS -->
+    <!-- SKILLS -->
     <section id="skills">
         <div class="section-header">
             <span class="section-tag">02</span>
@@ -221,8 +214,6 @@
                 <button class="skill-tab" data-tab="leadership"><span class="tab-icon">👥</span><span>Team Leadership</span></button>
             </div>
             <div class="skill-panels">
-
-                <!-- POWER -->
                 <div class="skill-panel active" id="tab-power">
                     <div class="panel-left">
                         <div class="panel-badge">Power Systems</div>
@@ -244,8 +235,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- CONTROL -->
                 <div class="skill-panel" id="tab-control">
                     <div class="panel-left">
                         <div class="panel-badge">Control & Instrumentation</div>
@@ -265,8 +254,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- IOT -->
                 <div class="skill-panel" id="tab-iot">
                     <div class="panel-left">
                         <div class="panel-badge">IoT Development</div>
@@ -287,8 +274,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- EMBEDDED -->
                 <div class="skill-panel" id="tab-embedded">
                     <div class="panel-left">
                         <div class="panel-badge">Embedded Systems</div>
@@ -307,8 +292,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- LEADERSHIP — ORG CHART FLOWCHART -->
                 <div class="skill-panel" id="tab-leadership">
                     <div class="panel-left">
                         <div class="panel-badge">Team Leadership</div>
@@ -321,7 +304,6 @@
                     <div class="panel-right">
                         <div class="panel-visual panel-visual-leadership">
                             <div class="org-chart">
-                                <!-- Level 1: GM -->
                                 <div class="org-level">
                                     <div class="org-node org-gm">
                                         <span class="org-icon">👤</span>
@@ -329,17 +311,11 @@
                                     </div>
                                 </div>
                                 <div class="org-connector-line"></div>
-                                <!-- Level 2: Dept Managers -->
                                 <div class="org-level org-level-2">
-                                    <div class="org-node org-dept">
-                                        <span class="org-title">Dept. Manager A</span>
-                                    </div>
-                                    <div class="org-node org-dept">
-                                        <span class="org-title">Dept. Manager B</span>
-                                    </div>
+                                    <div class="org-node org-dept"><span class="org-title">Dept. Manager A</span></div>
+                                    <div class="org-node org-dept"><span class="org-title">Dept. Manager B</span></div>
                                 </div>
                                 <div class="org-connector-spread"></div>
-                                <!-- Level 3: Head of Divisions -->
                                 <div class="org-level org-level-3">
                                     <div class="org-node org-div">Head Div A</div>
                                     <div class="org-node org-div">Head Div B</div>
@@ -347,30 +323,27 @@
                                     <div class="org-node org-div">Head Div D</div>
                                 </div>
                                 <div class="org-connector-line"></div>
-                                <!-- Level 4: All Members -->
                                 <div class="org-level">
                                     <div class="org-node org-members">
                                         <span class="org-members-icon">👥</span>
-                                        <span> all active members</span>
+                                        <span>all active members</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- PROJECTS — 3x2 uniform grid, full labels -->
+    <!-- PROJECTS -->
     <section id="projects">
         <div class="section-header">
             <span class="section-tag">03</span>
             <h2>Selected Engineering Projects</h2>
         </div>
         <div class="project-grid">
-
             <div class="project-card">
                 <div class="project-header">
                     <div class="project-num">Tugas Akhir</div>
@@ -378,11 +351,8 @@
                 </div>
                 <h3>Microwave-Assisted Photocatalyst Reactor for Synthetic Dye Degradation</h3>
                 <p>Design of a photocatalyst reactor system for degradation of synthetic liquid dye waste, equipped with spectrophotometer-based detection and web-based real-time monitoring.</p>
-                <div class="project-tags">
-                    <span>Raspberry Pi 5</span><span>Spectrophotometer</span><span>Web Monitoring</span><span>Python</span>
-                </div>
+                <div class="project-tags"><span>Raspberry Pi 5</span><span>Spectrophotometer</span><span>Web Monitoring</span><span>Python</span></div>
             </div>
-
             <div class="project-card">
                 <div class="project-header">
                     <div class="project-num">Kerja Praktik</div>
@@ -390,11 +360,8 @@
                 </div>
                 <h3>Universal Testing Machine (UTM) Interface Circuit on PCB</h3>
                 <p>Design of UTM interface circuit based on Arduino UNO on a Printed Circuit Board, utilizing MQTT protocol for web-based data transmission and load cell sensor for force measurement.</p>
-                <div class="project-tags">
-                    <span>Arduino Nano</span><span>MQTT</span><span>Load Cell</span><span>PCB</span><span>EasyEDA</span>
-                </div>
+                <div class="project-tags"><span>Arduino Nano</span><span>MQTT</span><span>Load Cell</span><span>PCB</span><span>EasyEDA</span></div>
             </div>
-
             <div class="project-card">
                 <div class="project-header">
                     <div class="project-num">Electric Vehicle</div>
@@ -402,11 +369,8 @@
                 </div>
                 <h3>Prototype Motor Listrik Kendaraan Hemat Energi — Kukang EV ITERA</h3>
                 <p>Electrical system development for energy-efficient electric vehicle prototype, including motor controller design and energy optimization for national competition.</p>
-                <div class="project-tags">
-                    <span>Electric Vehicle</span><span>Motor Control</span><span>Energy Optimization</span>
-                </div>
+                <div class="project-tags"><span>Electric Vehicle</span><span>Motor Control</span><span>Energy Optimization</span></div>
             </div>
-
             <div class="project-card">
                 <div class="project-header">
                     <div class="project-num">Tugas Besar</div>
@@ -414,11 +378,8 @@
                 </div>
                 <h3>IoT Household Power Monitoring — Voltage, Current & Power</h3>
                 <p>Device for monitoring voltage, current, and power consumption in households based on ESP8266 integrated with Blynk IoT dashboard and PZEM sensor for real-time parameter display.</p>
-                <div class="project-tags">
-                    <span>ESP8266</span><span>Blynk IoT</span><span>PZEM Sensor</span><span>Real-time</span>
-                </div>
+                <div class="project-tags"><span>ESP8266</span><span>Blynk IoT</span><span>PZEM Sensor</span><span>Real-time</span></div>
             </div>
-
             <div class="project-card">
                 <div class="project-header">
                     <div class="project-num">Tugas Besar</div>
@@ -426,11 +387,8 @@
                 </div>
                 <h3>IoT-Based Automatic Plant Watering System with Firebase</h3>
                 <p>Automatic plant watering system integrated with Firebase for cloud data storage and remote monitoring, utilizing turbidity, pH, and DHT22 humidity sensors for precision irrigation control.</p>
-                <div class="project-tags">
-                    <span>Firebase</span><span>Turbidity Sensor</span><span>pH Sensor</span><span>DHT22</span>
-                </div>
+                <div class="project-tags"><span>Firebase</span><span>Turbidity Sensor</span><span>pH Sensor</span><span>DHT22</span></div>
             </div>
-
             <div class="project-card">
                 <div class="project-header">
                     <div class="project-num">Tugas Besar</div>
@@ -438,11 +396,8 @@
                 </div>
                 <h3>BJT Common Emitter Amplifier Circuit on PCB</h3>
                 <p>Design and implementation of BJT Common Emitter Amplifier circuit with complete PCB layout designed using Proteus software, including simulation verification before fabrication.</p>
-                <div class="project-tags">
-                    <span>BJT</span><span>Proteus</span><span>PCB Design</span><span>Circuit Simulation</span>
-                </div>
+                <div class="project-tags"><span>BJT</span><span>Proteus</span><span>PCB Design</span><span>Circuit Simulation</span></div>
             </div>
-
         </div>
     </section>
 
@@ -453,8 +408,6 @@
             <h2>Experience</h2>
         </div>
         <div class="timeline">
-
-            <!-- Kukang EV ITERA -->
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content tl-ambient" data-photos="fotoKukang1.jpeg,fotoKukang2.jpeg,fotoKukang3.jpeg">
@@ -475,8 +428,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- BRIN Samaun Samadikun Bandung -->
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content tl-ambient" data-photos="fotoBRIN1.jpeg,fotoBRIN2.jpeg,fotoBRIN3.jpeg">
@@ -497,8 +448,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Laboratorium Dasar Teknik Elektro -->
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content tl-ambient" data-photos="fotoAs1.jpg,fotoAs2.png,fotoAs3.jpg">
@@ -519,8 +468,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- ITERA Mengajar -->
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content tl-ambient" data-photos="fotoIM1.jpg,fotoIM2.jpg,fotoIM3.jpg">
@@ -541,78 +488,52 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- RESEARCH OPPORTUNITY — REDESIGNED, 6 ITEMS -->
+    <!-- RESEARCH -->
     <section id="research">
         <div class="section-header">
             <span class="section-tag">05</span>
             <h2>Research Opportunity</h2>
         </div>
         <div class="research-grid">
-
             <div class="research-card" data-index="0">
-                <div class="rc-top">
-                    <div class="rc-icon-wrap">⚡</div>
-                    <div class="rc-num">01</div>
-                </div>
+                <div class="rc-top"><div class="rc-icon-wrap">⚡</div><div class="rc-num">01</div></div>
                 <h4 class="rc-title">Power Systems</h4>
                 <p class="rc-desc">Interest in electrical power distribution, grounding systems, load analysis, and power quality, with a focus on building reliable and efficient power infrastructure.</p>
                 <div class="rc-tags"><span>Power Distribution</span><span>Grid Systems</span><span>Energy Conversion</span></div>
             </div>
-
             <div class="research-card" data-index="1">
-                <div class="rc-top">
-                    <div class="rc-icon-wrap">⚙</div>
-                    <div class="rc-num">02</div>
-                </div>
+                <div class="rc-top"><div class="rc-icon-wrap">⚙</div><div class="rc-num">02</div></div>
                 <h4 class="rc-title">Automation & Industrial Control</h4>
                 <p class="rc-desc">Design and study of automated control systems for industrial applications including PLC programming, SCADA systems, and process automation.</p>
                 <div class="rc-tags"><span>PLC</span><span>SCADA</span><span>Process Control</span></div>
             </div>
-
             <div class="research-card" data-index="2">
-                <div class="rc-top">
-                    <div class="rc-icon-wrap">🚗</div>
-                    <div class="rc-num">03</div>
-                </div>
+                <div class="rc-top"><div class="rc-icon-wrap">🚗</div><div class="rc-num">03</div></div>
                 <h4 class="rc-title">Energy Efficient Vehicle</h4>
                 <p class="rc-desc">Research in electric vehicle drivetrain systems, motor control, and energy management strategies for prototype competition vehicles.</p>
                 <div class="rc-tags"><span>Electric Vehicle</span><span>Motor Control</span><span>Energy Mgmt</span></div>
             </div>
-
             <div class="research-card" data-index="3">
-                <div class="rc-top">
-                    <div class="rc-icon-wrap">📡</div>
-                    <div class="rc-num">04</div>
-                </div>
+                <div class="rc-top"><div class="rc-icon-wrap">📡</div><div class="rc-num">04</div></div>
                 <h4 class="rc-title">Instrumentation System</h4>
                 <p class="rc-desc">Development of measurement and instrumentation systems using sensors, signal conditioning, and data acquisition platforms for precision engineering.</p>
                 <div class="rc-tags"><span>DAQ</span><span>Sensors</span><span>Signal Conditioning</span></div>
             </div>
-
             <div class="research-card" data-index="4">
-                <div class="rc-top">
-                    <div class="rc-icon-wrap">🌱</div>
-                    <div class="rc-num">05</div>
-                </div>
+                <div class="rc-top"><div class="rc-icon-wrap">🌱</div><div class="rc-num">05</div></div>
                 <h4 class="rc-title">Renewable Energy</h4>
                 <p class="rc-desc">Exploration of sustainable energy conversion and storage systems including solar, photocatalytic processes, and energy-efficient technologies.</p>
                 <div class="rc-tags"><span>Solar</span><span>Photocatalyst</span><span>Sustainability</span></div>
             </div>
-
             <div class="research-card" data-index="5">
-                <div class="rc-top">
-                    <div class="rc-icon-wrap">💡</div>
-                    <div class="rc-num">06</div>
-                </div>
+                <div class="rc-top"><div class="rc-icon-wrap">💡</div><div class="rc-num">06</div></div>
                 <h4 class="rc-title">Embedded System & IoT</h4>
                 <p class="rc-desc">Integration of embedded microcontrollers with IoT platforms for connected sensing, remote monitoring, and intelligent edge computing applications.</p>
                 <div class="rc-tags"><span>ESP32</span><span>MQTT</span><span>Edge Computing</span></div>
             </div>
-
         </div>
     </section>
 
@@ -627,7 +548,7 @@
                 <span class="contact-icon">✉</span>
                 <div><span class="contact-label">Email</span><span class="contact-val">fachrizalamri8@email.com</span></div>
             </a>
-            <a href="https://www.linkedin.com/in/fachrizal-amri-98b851241/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdY1Yjr1nRaaqXamoJMh2ng%3D%3D" target="_blank" class="contact-card">
+            <a href="https://www.linkedin.com/in/fachrizal-amri-98b851241/" target="_blank" class="contact-card">
                 <span class="contact-icon">in</span>
                 <div><span class="contact-label">LinkedIn</span><span class="contact-val">linkedin.com/in/fachrizal-amri-98b851241</span></div>
             </a>
