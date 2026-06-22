@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fachrizal Amri | Electrical Engineering Enthusias</title>
+    <title>Fachrizal Amri | Electrical Engineering Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -45,12 +45,12 @@
             <div class="hero-content">
                 <div class="hero-eyebrow">
                     <span class="eyebrow-line"></span>
-                    <span>Electrical Engineering Enthusias</span>
+                    <span>Engineering Portfolio</span>
                 </div>
                 <h1>Halo, I'm <span class="name-accent">Fachrizal</span><br>Amri</h1>
                 <h2 id="typing-target"></h2>
-                <p class="hero-desc">Power System · Control & Instrumentation · IoT Development · Embedded System · Manajement Project</p>
-                <p class="hero-text">Driven by curiosity, guided by engineering principles, and committed to creating solutions that make a meaningful impact.</p>
+                <p class="hero-desc">Power System · Automation & Control · IoT Development · Green Energy</p>
+                <p class="hero-text"><em>"I have no special talent. I am only passionately curious."</em><br><span class="hero-quote-cite">— Albert Einstein</span></p>
                 <div class="hero-cta">
                     <a href="#projects" class="btn-primary">Explore My Work</a>
                     <a href="#contact" class="btn-secondary">Get In Touch</a>
@@ -137,7 +137,8 @@
             <h2>About Me</h2>
         </div>
 
-        <div class="about-single-wrap">
+        <div class="about-content-grid">
+
             <div class="about-single-card">
                 <span class="about-single-mark">"</span>
                 <div class="about-single-text">
@@ -153,6 +154,54 @@
 
                     <p class="about-single-quote">Driven by curiosity, guided by engineering principles, and committed to creating solutions that make a meaningful impact.</p>
                 </div>
+            </div>
+
+            <!-- INTERACTIVE PHOTO GALLERY — pinned polaroid snapshots -->
+            <div class="about-gallery" id="aboutGallery">
+                <div class="about-gallery-grid-bg"></div>
+                <div class="about-gallery-label">
+                    <span class="ag-line"></span>
+                    <span>Snapshots</span>
+                </div>
+
+                <div class="about-gallery-grid">
+                    <button class="about-polaroid ap-1" data-index="0" aria-label="Open photo: Shell Eco-marathon, FTI Expo">
+                        <span class="ap-pin"></span>
+                        <img src="About1.jpeg" alt="Fachrizal Amri at Shell Eco-marathon FTI Expo">
+                        <span class="ap-cap">Shell Eco-marathon · FTI Expo</span>
+                    </button>
+                    <button class="about-polaroid ap-2" data-index="1" aria-label="Open photo: casual portrait">
+                        <span class="ap-pin"></span>
+                        <img src="About2.jpeg" alt="Fachrizal Amri casual portrait">
+                        <span class="ap-cap">Behind the Frame</span>
+                    </button>
+                    <button class="about-polaroid ap-3" data-index="2" aria-label="Open photo: presenting Deltronter">
+                        <span class="ap-pin"></span>
+                        <img src="About3.jpeg" alt="Fachrizal Amri presenting Deltronter project">
+                        <span class="ap-cap">Presenting · Deltronter</span>
+                    </button>
+                    <button class="about-polaroid ap-4" data-index="3" aria-label="Open photo: ITERA portrait">
+                        <span class="ap-pin"></span>
+                        <img src="About4.jpeg" alt="Fachrizal Amri ITERA portrait">
+                        <span class="ap-cap">Electrical Engineering</span>
+                    </button>
+                </div>
+
+                <span class="about-gallery-hint">Click a photo to view</span>
+            </div>
+
+        </div>
+
+        <!-- Lightbox for the About gallery -->
+        <div class="about-lightbox" id="aboutLightbox">
+            <button class="al-close" id="aboutLightboxClose" aria-label="Close">&times;</button>
+            <figure class="al-figure">
+                <img id="aboutLightboxImg" src="" alt="">
+                <figcaption id="aboutLightboxCap"></figcaption>
+            </figure>
+            <div class="al-nav">
+                <button id="aboutLightboxPrev" aria-label="Previous photo">&larr;</button>
+                <button id="aboutLightboxNext" aria-label="Next photo">&rarr;</button>
             </div>
         </div>
     </section>
@@ -189,7 +238,6 @@
                             <div class="pmf-scanline"></div>
                             <span class="pmf-corner pmf-tl"></span><span class="pmf-corner pmf-tr"></span>
                             <span class="pmf-corner pmf-bl"></span><span class="pmf-corner pmf-br"></span>
-                            <div class="pmf-tag"><span class="pmf-dot"></span>Power Systems</div>
                             <div class="pmf-readout">
                                 <span>V <b>220V</b></span><span>I <b>4.2A</b></span><span>P <b>924W</b></span>
                             </div>
@@ -213,7 +261,6 @@
                             <div class="pmf-scanline"></div>
                             <span class="pmf-corner pmf-tl"></span><span class="pmf-corner pmf-tr"></span>
                             <span class="pmf-corner pmf-bl"></span><span class="pmf-corner pmf-br"></span>
-                            <div class="pmf-tag"><span class="pmf-dot"></span>Live Control Loop</div>
                             <button class="pmf-mute" id="controlMuteBtn" aria-label="Toggle sound">🔇</button>
                         </div>
                     </div>
@@ -235,7 +282,6 @@
                             <div class="pmf-scanline"></div>
                             <span class="pmf-corner pmf-tl"></span><span class="pmf-corner pmf-tr"></span>
                             <span class="pmf-corner pmf-bl"></span><span class="pmf-corner pmf-br"></span>
-                            <div class="pmf-tag"><span class="pmf-dot"></span>Connected Devices</div>
                             <div class="pmf-pulse-dot pmf-pulse-1"></div>
                             <div class="pmf-pulse-dot pmf-pulse-2"></div>
                         </div>
@@ -258,7 +304,6 @@
                             <div class="pmf-scanline"></div>
                             <span class="pmf-corner pmf-tl"></span><span class="pmf-corner pmf-tr"></span>
                             <span class="pmf-corner pmf-bl"></span><span class="pmf-corner pmf-br"></span>
-                            <div class="pmf-tag"><span class="pmf-dot"></span>Embedded Hardware</div>
                         </div>
                     </div>
                 </div>
@@ -425,7 +470,7 @@
                             <span class="tl-role-badge">General Manager</span>
                         </div>
                         <h3>General Manager</h3>
-                        <p class="tl-desc">As the head and highest authority responsible for all matters related to Kukang EV ITERA. Leading 81 active student members while realizing flagship programs and upholding the community's reputation for continued excellence and competence.</p>   
+                        <p class="tl-desc">As the head and highest authority responsible for all matters related to Kukang EV ITERA. Leading 81 active student members while realizing flagship programs and upholding the community's reputation for continued excellence and competence.</p>
                         <div class="tl-ambient-dots"></div>
                     </div>
                 </div>
